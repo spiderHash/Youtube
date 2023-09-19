@@ -7,7 +7,7 @@ export const videoFetch = async(id) => {
     url: 'https://ytstream-download-youtube-videos.p.rapidapi.com/dl',
     params: {id: id},
     headers: {
-      'X-RapidAPI-Key': 'c243fd25e1msh4155ea2bd772593p1c2ac6jsn0de69e747b1d',
+      'X-RapidAPI-Key': 'RAPIDAPI_KEY',
       'X-RapidAPI-Host': 'ytstream-download-youtube-videos.p.rapidapi.com'
     }
   });
@@ -23,7 +23,7 @@ const options = {
   url: 'https://youtube-mp36.p.rapidapi.com/dl',
   params: {id: id},
   headers: {
-    'X-RapidAPI-Key': 'a39f0b13b5mshc36b3a888463ad1p1eb654jsn0fdf14f17155',
+    'X-RapidAPI-Key': 'RAPIDAPI_KEY',
     'X-RapidAPI-Host': 'youtube-mp36.p.rapidapi.com'
   }
 };
@@ -54,7 +54,7 @@ export const search = async(query) =>{
         maxResults: '4'
     },
     headers: {
-        'X-RapidAPI-Key': 'a39f0b13b5mshc36b3a888463ad1p1eb654jsn0fdf14f17155',
+        'X-RapidAPI-Key': 'RAPIDAPI_KEY',
         'X-RapidAPI-Host': 'youtube-v31.p.rapidapi.com'
     }
     };
