@@ -6,10 +6,10 @@ const VideoCardList = (props) => {
     const [items, setItems] = useState();
     useEffect(() => {
     search(props.params).then((data) => {console.log(props.params); setItems(data.items) });
-  }, [props])
+  }, [props.params.relatedToVideoId, props.params.q])
   
   return (
-    <div>
+    <div className="videoCardList">
       {items?.map((item,index)=> {
         return(
         <VideoCard key={index} id={item.id.videoId} snippet={item.snippet}/>  

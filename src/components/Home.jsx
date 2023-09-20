@@ -1,14 +1,16 @@
-import React from 'react'
-import Search from './Search';
 import VideoCardList from './VideoCardList';
+import Categories from './Categories';
+import Navbar from './Navbar';
 
 const Home = () => {
   
   return (
-    <div>
-      <h1>Youtube</h1>
-      <Search />
+    <div className='home'>
+      <Navbar />
+      <div className='content'>
+      <Categories />
       <VideoCardList params={{q:'new'}} />
+      </div>
     </div>
   )
 }

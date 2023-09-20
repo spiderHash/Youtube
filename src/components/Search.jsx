@@ -7,10 +7,10 @@ const Search = () => {
     const navigate = useNavigate();
     const handleSearch = (e) =>{
         e.preventDefault();
-        navigate('results?search_query='+searchQuery);
+        navigate('../results?search_query='+searchQuery);
     }
   return (
-    <div>
+    <div className="search">
       <form onSubmit={handleSearch}>
         <input type="text"
             onChange={(e) => setSearchQuery(e.target.value)}

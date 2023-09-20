@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 const VideoCard = (props) => {
   return (
-    <div>
+    <div className="videoCard">
       <Link to= {'/watch?v=' + props.id}>    
          <img src = {props?.snippet?.thumbnails?.medium?.url || props?.snippet?.thumbnails?.default?.url || " "} />
       </Link>
